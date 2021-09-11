@@ -1,0 +1,1 @@
+/usr/bin/c++  -static-libstdc++ -static-libgcc -g CMakeFiles/convert.dir/convert.cpp.o -o convert 
