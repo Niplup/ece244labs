@@ -31,7 +31,7 @@ GameState::GameState() {
     winCode = 0;
     turn = true;
     for (int i = 0; i < boardSize; i++) {
-        for (int j = 0; j < boardSize; i++) {
+        for (int j = 0; j < boardSize; j++) {
             gameBoard[i][j] = Empty;
         }
     }
@@ -55,7 +55,7 @@ void GameState::set_selectedColumn(int value){
 }
 
 bool GameState::get_moveValid(){
-    return get_moveValid();
+    return moveValid;
 }
 
 void GameState::set_moveValid(bool value){
@@ -87,11 +87,11 @@ void GameState::set_turn(bool value){
 }
 
 int GameState::get_gameBoard(int row, int col){
-    if (row < boardSize && col < boardSize) return gameBoard[row][col];
+    if (row < boardSize && row >= 0 && col < boardSize && col >= 0) return gameBoard[row][col];
     else return 0;
 }
 
 void GameState::set_gameBoard(int row, int col, int value){
-    if (row < boardSize && col < boardSize && value >= O && value <= X) gameBoard[row][col] = value;
+    if (row < boardSize && row >= 0 && col < boardSize && col >= 0 && value >= O && value <= X) gameBoard[row][col] = value;
     else return;
 }

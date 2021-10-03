@@ -35,7 +35,8 @@ int main() {
     // Read two integers from the user that represent the row and column
     // the player would like to place an X or an O in
     // You can assume there will be no formatting errors in the input
-
+    string moveValidst;
+    string gameOverst;
     int row;
     int col;
 
@@ -60,9 +61,12 @@ int main() {
         
         // Call playMove
         // ECE244 Student: add your code here
+        cout << "Selected row " << game_state.get_selectedRow() << " and column " << game_state.get_selectedColumn() << endl;
+        cout << "Game state after playMove:" << endl;
         playMove(game_state);
             
         // Print the GameState object, as prescribed in the handout
+        cout << "Board:" << endl;
         for (int i = 0; i < boardSize; i++) {
             cout << "  ";
             for (int j = 0; j < boardSize; j++) {
@@ -72,6 +76,16 @@ int main() {
             }
             cout << '\n';
         }
+        if (game_state.get_moveValid()) moveValidst = "true";
+        else moveValidst = "false";
+
+        if (game_state.get_gameOver()) gameOverst = "true";
+        else gameOverst = "false";
+
+        cout << "moveValid: " << moveValidst << endl;
+        cout << "gameOver: " << gameOverst << endl;
+        cout << "winCode: " << game_state.get_winCode() << endl;
+        cout << '\n';
             
         // ECE244 Student: add your code here
         game_state.set_turn(!game_state.get_turn());
