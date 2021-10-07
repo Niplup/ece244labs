@@ -9,16 +9,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="030a2cb0-7b4e-4b78-9e3e-c41492e9b4b9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/tictactoe.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameState.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/GameState.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameState.o" beforeDir="false" afterPath="$PROJECT_DIR$/GameState.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/playMove.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/playMove.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/playMove.o" beforeDir="false" afterPath="$PROJECT_DIR$/playMove.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tictactoe.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/tictactoe.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tictactoe.o" beforeDir="false" afterPath="$PROJECT_DIR$/tictactoe.o" afterDir="false" />
-    </list>
+    <list default="true" id="030a2cb0-7b4e-4b78-9e3e-c41492e9b4b9" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -53,9 +44,9 @@
     <property name="settings.editor.selected.configurable" value="MTHome" />
   </component>
   <component name="RunManager">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
@@ -75,6 +66,7 @@
       <workItem from="1632924677896" duration="3000" />
       <workItem from="1633025429013" duration="27000" />
       <workItem from="1633270794343" duration="2474000" />
+      <workItem from="1633633380441" duration="1000" />
     </task>
     <servers />
   </component>
