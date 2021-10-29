@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/lab3.dir/parser.cpp.o CMakeFiles/lab3.dir/Shape.cpp.o -o lab3 

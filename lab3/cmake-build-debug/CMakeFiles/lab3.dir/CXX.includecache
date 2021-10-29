@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/nipun/Documents/ece244/lab3/Shape.h
+iostream
+-
+string
+-
+
+/home/nipun/Documents/ece244/lab3/globals.h
+string
+-
+
+/home/nipun/Documents/ece244/lab3/parser.cpp
+iostream
+-
+sstream
+-
+string
+-
+globals.h
+/home/nipun/Documents/ece244/lab3/globals.h
+Shape.h
+/home/nipun/Documents/ece244/lab3/Shape.h
+
