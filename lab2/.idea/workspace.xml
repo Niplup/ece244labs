@@ -9,7 +9,14 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="030a2cb0-7b4e-4b78-9e3e-c41492e9b4b9" name="Changes" comment="" />
+    <list default="true" id="030a2cb0-7b4e-4b78-9e3e-c41492e9b4b9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../lab3/Shape.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab3/parser.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab3/parser.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab3/Shape.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../lab3/Shape.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab3/parser.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../lab3/parser.cpp" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,6 +48,7 @@
     <property name="cf.first.check.clang-format" value="false" />
     <property name="cidr.known.project.marker" value="true" />
     <property name="cmake.loaded.for.project" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../lab3/parser.cpp" />
     <property name="settings.editor.selected.configurable" value="MTHome" />
   </component>
   <component name="RunManager">
@@ -67,6 +75,8 @@
       <workItem from="1633025429013" duration="27000" />
       <workItem from="1633270794343" duration="2474000" />
       <workItem from="1633633380441" duration="1000" />
+      <workItem from="1635451317867" duration="281000" />
+      <workItem from="1635453604545" duration="29000" />
     </task>
     <servers />
   </component>
