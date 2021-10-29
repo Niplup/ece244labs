@@ -69,5 +69,5 @@ void Shape::setRotate(int angle) {
 
 //Utility
 void Shape::draw() {
-    cout << "Drew " << name << ": " << type << " " << x_location << " " << y_location << " " << x_size << " " << y_size << endl;
+    cout <<  name << ": " << type << " " << x_location << " " << y_location << " " << x_size << " " << y_size << endl;
 }

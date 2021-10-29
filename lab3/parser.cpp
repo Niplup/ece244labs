@@ -133,9 +133,11 @@ int main() {
                 }
             }
         } else if (command == keyWordsList[3]) {
+            if (lineStream.eof()) {errorMessage(8); goto jmp;}
             //move
             lineStream >> name;
             if (lineStream.fail()) {errorMessage(1); goto jmp;}
+            if (!nameExist(name, numShapes)) {shapeNotFound(name); goto jmp;}
             if (lineStream.eof()) {errorMessage(8); goto jmp;}
             if (nameExist(name, numShapes)) {
                 lineStream >> x_loc;
@@ -164,9 +166,11 @@ int main() {
                 goto jmp;
             }
         } else if (command == keyWordsList[4]) {
+            if (lineStream.eof()) {errorMessage(8); goto jmp;}
             //rotate
             lineStream >> name;
             if (lineStream.fail()) {errorMessage(1); goto jmp;}
+            if (!nameExist(name, numShapes)) {shapeNotFound(name); goto jmp;}
             if (lineStream.eof()) {errorMessage(8); goto jmp;}
             if (nameExist(name, numShapes)) { 
                 lineStream >> angle;
@@ -187,18 +191,22 @@ int main() {
                 goto jmp;
             }
         } else if (command == keyWordsList[5]) {
+            if (lineStream.eof()) {errorMessage(8); goto jmp;}
             //draw
             lineStream >> name;
             if (lineStream.fail()) {errorMessage(1); goto jmp;}
+            if (!nameExist(name, numShapes) && name != "all") {shapeNotFound(name); goto jmp;}
             if (!lineStream.eof()) {errorMessage(7); goto jmp;}
 
             if (nameExist(name, numShapes)) {
                 for (int i = 0; i < numShapes; i++) {
                     if (name == shapesArray[i]->getName()) {
+                        cout << "Drew ";
                         shapesArray[i]->draw();
                     }
                 }
             } else if (name == "all") {
+                cout << "Drew all shapes" << endl;
                 for (int i = 0; i < numShapes; i++) {
                     shapesArray[i]->draw();
                 }
@@ -209,11 +217,14 @@ int main() {
 
         } else if (command == keyWordsList[6]) {
             //delete
+            if (lineStream.eof()) {errorMessage(8); goto jmp;}
             lineStream >> name;
             if (lineStream.fail()) {errorMessage(1); goto jmp;}
+            if (!nameExist(name, numShapes) && name != "all") {shapeNotFound(name); goto jmp;}
             if (!lineStream.eof()) {errorMessage(7); goto jmp;}
 
             if (nameExist(name, numShapes)) {
+                cout << "Deleted shape " << name << endl;
                 for (int i = 0; i < numShapes; i++) {
                     if (name == shapesArray[i]->getName()) {
                         delete shapesArray[i];
@@ -227,6 +238,7 @@ int main() {
                 numShapes--;
 
             } else if (name == "all") {
+                cout << "Deleted: all shapes" << endl;
                 for (int i = 0; i < numShapes; i++) {
                     delete shapesArray[i];
                     shapesArray[i] = nullptr;
