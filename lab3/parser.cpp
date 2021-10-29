@@ -310,7 +310,7 @@ string trim(const string& line) {
     const char* WhiteSpace = " \t\v\r\n";
     size_t start = line.find_first_not_of(WhiteSpace);
     size_t end = line.find_last_not_of(WhiteSpace);
-    return start == end ? std::string() : line.substr(start, end - start + 1);
+    return start == end ? string() : line.substr(start, end - start + 1);
 }
 
 bool namePossible(string name) {
