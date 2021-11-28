@@ -125,10 +125,9 @@ int main() {
             } else if (groupExists(name)) {
                 GroupNode* groupDelete = groupFinder(name);
                 if (groupDelete != nullptr) {
-                    ShapeList* tempShape = groupDelete->getShapeList();
-                    while (tempShape->getHead() != nullptr) {
-                        string shapeCounter = tempShape->getHead()->getShape()->getName();
-                        ShapeNode* shapeCounterNode = tempShape->remove(shapeCounter);
+                    while (groupDelete->getShapeList()->getHead() != nullptr) {
+                        string shapeCounter = groupDelete->getShapeList()->getHead()->getShape()->getName();
+                        ShapeNode* shapeCounterNode = groupDelete->getShapeList()->remove(shapeCounter);
                         poolGroup->getShapeList()->insert(shapeCounterNode);
                     }
                     delete gList->remove(name);
